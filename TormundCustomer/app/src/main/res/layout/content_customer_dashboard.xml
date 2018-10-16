@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Dashboard.CustomerDashBoard"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="16dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:elevation="16dp"
+
+            >
+
+            <!-- Header Menu -->
+            <LinearLayout
+                android:id="@+id/seccion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimario"
+                android:elevation="16dp">
+                <ImageView
+                    android:id='@+id/ProfileView'
+                    android:layout_width="190dp"
+                    android:layout_height="60dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="105dp"
+                    android:src="@drawable/hellrazor_extendido"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="50dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical">
+
+                    <!--<TextView
+                        android:id="@+id/dashboard_hora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Hell Razor"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/work_sans_semibold" />
+
+                    <TextView
+                        android:id="@+id/dashboard_day_of_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Jueves"
+                        android:textColor="#FFFFFF"
+                        android:textSize="2sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/work_sans_semibold" />
+
+                    <TextView
+                        android:id="@+id/dashboard_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/allerta"
+                        android:text="10 Agosto 2018"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/work_sans_semibold" />-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- Botones Menu -->
+            <LinearLayout
+                android:id="@+id/seccion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal"
+                android:orientation="horizontal"
+                android:background="@color/colorOrange"
+                android:elevation="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/colorTransparenteLight"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:elevation="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:tint="@color/colorWhite"
+                            android:src="@drawable/ic_menu_camera"
+                            android:onClick="onTakePicture"/>
+                    </LinearLayout><!-- Camera button-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="10dp"
+                            android:tint="@color/colorWhite"
+                            android:src="@drawable/ic_calendar_clock"
+                            android:onClick="onCreateDate"/>
+                    </LinearLayout><!-- New Date button-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        >
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:tint="@color/colorWhite"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_menu_send"
+                            android:onClick="onOpenGroupChat"/>
+                    </LinearLayout><!-- Message Group button-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+
+        >
+        <!-- LINEAR LAYOUT SCROLL !-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+            <!-- LINEAR LAYOUT SCROLL !-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:src="@drawable/barbe"
+                android:scaleType="centerCrop"/>
+
+            <!--<include
+                layout="@layout/dash_cliente_bienvenido"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                /-->
+
+            <include
+                layout="@layout/dash_cliente_ultimacita"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+            <include
+                layout="@layout/dash_cliente_servicios_realizados"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <include
+                layout="@layout/dash_cliente_calificacion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <include
+                layout="@layout/dash_cliente_cuentas_tarjetas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <include
+                layout="@layout/dash_cliente_imagenes_servicios"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+
+
+</LinearLayout>

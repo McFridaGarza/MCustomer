@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Dashboard.MarketActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimario"
+        >
+        <!-- Header Menu -->
+        <LinearLayout
+            android:id="@+id/seccion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="16dp"
+            android:background="@color/colorPrimario">
+            <ImageView
+                android:id='@+id/ProfileView'
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="105dp"
+                android:src="@drawable/hellrazor_extendido"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="4dp"
+                android:paddingLeft="50dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imgcarrito"
+                    android:layout_width="20dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="05dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_baseline_shopping_cart_24px"
+                    android:backgroundTint="#FFF"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerMarketList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#FFF"
+            android:scrollbars = "vertical"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

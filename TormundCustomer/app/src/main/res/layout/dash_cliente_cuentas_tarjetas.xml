@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        card_view:cardBackgroundColor="#DFE0DE">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="05dp"
+        >
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="120dp"
+            android:layout_weight="1.3"
+            android:layout_margin="1dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/IdUltimaCita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="REDES SOCIALES"
+                android:textColor="@color/naranja2"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"/>
+
+
+            <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idnombserv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:drawableLeft="@drawable/ic_facebook_box"
+                android:drawablePadding="7dp"
+                android:drawableTint="#2744F0"
+                android:textColor="#000"
+                android:text="Frida Garza"
+                />
+
+        <TextView
+            android:id="@+id/idRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="05dp"
+            android:layout_below="@id/idnombserv"
+            android:drawableTint="#ED2E7F"
+            android:drawableLeft="@drawable/ico_instagram"
+            android:drawablePadding="7dp"
+            android:text="Frida Garza"
+            android:textColor="#000"
+
+            />
+                <TextView
+                    android:id="@+id/idCuenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar Cuenta"
+                    android:layout_marginTop="05dp"
+                    android:drawableLeft="@drawable/ic_plus"
+                    android:drawableTint="#F30404"
+                    android:drawablePadding="7dp"
+                    android:layout_below="@id/idRed"
+                    android:textColor="#000"
+
+                    />
+    </RelativeLayout>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="120dp"
+            android:layout_weight="1.6"
+            android:orientation="vertical"
+            android:layout_margin="2dp">
+            <TextView
+                android:id="@+id/IdtarjetasReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="TARJETAS REGISTRADAS"
+                android:textColor="@color/naranja"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/Idnumerotarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="**** **** **** 7856   VISA"
+                android:layout_marginTop="16dp"
+                android:textColor="#000"
+
+                />
+
+            <TextView
+                android:id="@+id/idagregartarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Agregar Tarjeta"
+                android:layout_below="@id/Idnumerotarjeta"
+                android:textColor="#000"
+                android:drawableTint="#F30404"
+                android:drawableLeft="@drawable/ic_plus"
+                android:drawablePadding="7dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
